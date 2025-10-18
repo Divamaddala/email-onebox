@@ -1,0 +1,40 @@
+{
+  "name": "email-onebox-backend",
+  "version": "1.0.0",
+  "description": "Email onebox backend with IMAP sync and AI categorization",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+  "dev:stub": "ts-node src/dev/dev_stub.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "email",
+    "imap",
+    "elasticsearch",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.19.1",
+    "@pinecone-database/pinecone": "^1.1.3",
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "imap": "^0.8.19",
+    "mailparser": "^3.7.5",
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.23",
+    "@types/imap": "^0.8.42",
+    "@types/node": "^20.19.22",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
